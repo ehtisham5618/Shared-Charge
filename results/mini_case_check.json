@@ -1,0 +1,124 @@
+{
+  "conditions": {
+    "chargers": 1,
+    "power_kw": 6,
+    "slot_minutes": 30,
+    "end_boundary": 6,
+    "policy": "P0",
+    "fee": 0,
+    "tie_break": "driver_id ascending"
+  },
+  "cases": {
+    "all_release": {
+      "simulated": {
+        "A": {
+          "start": 0,
+          "finish": 2,
+          "release": 2,
+          "wait_slots": 0,
+          "utility": 12.0
+        },
+        "B": {
+          "start": 2,
+          "finish": 3,
+          "release": 3,
+          "wait_slots": 2,
+          "utility": 3.0
+        },
+        "C": {
+          "start": 3,
+          "finish": 5,
+          "release": 5,
+          "wait_slots": 2,
+          "utility": 10.0
+        },
+        "total_utility": 25.0,
+        "total_wait_slots": 4,
+        "delivered_kwh": 15.0
+      },
+      "expected": {
+        "A": {
+          "start": 0,
+          "finish": 2,
+          "release": 2,
+          "wait_slots": 0,
+          "utility": 12
+        },
+        "B": {
+          "start": 2,
+          "finish": 3,
+          "release": 3,
+          "wait_slots": 2,
+          "utility": 3
+        },
+        "C": {
+          "start": 3,
+          "finish": 5,
+          "release": 5,
+          "wait_slots": 2,
+          "utility": 10
+        },
+        "total_utility": 25,
+        "total_wait_slots": 4,
+        "delivered_kwh": 15
+      },
+      "match": true
+    },
+    "A_holds_one_slot": {
+      "simulated": {
+        "A": {
+          "start": 0,
+          "finish": 2,
+          "release": 3,
+          "wait_slots": 0,
+          "utility": 14.0
+        },
+        "B": {
+          "start": 3,
+          "finish": 4,
+          "release": 4,
+          "wait_slots": 3,
+          "utility": 0.0
+        },
+        "C": {
+          "start": 4,
+          "finish": 6,
+          "release": 6,
+          "wait_slots": 3,
+          "utility": 9.0
+        },
+        "total_utility": 23.0,
+        "total_wait_slots": 6,
+        "delivered_kwh": 15.0
+      },
+      "expected": {
+        "A": {
+          "start": 0,
+          "finish": 2,
+          "release": 3,
+          "wait_slots": 0,
+          "utility": 14
+        },
+        "B": {
+          "start": 3,
+          "finish": 4,
+          "release": 4,
+          "wait_slots": 3,
+          "utility": 0
+        },
+        "C": {
+          "start": 4,
+          "finish": 6,
+          "release": 6,
+          "wait_slots": 3,
+          "utility": 9
+        },
+        "total_utility": 23,
+        "total_wait_slots": 6,
+        "delivered_kwh": 15
+      },
+      "match": true
+    }
+  },
+  "all_match": true
+}

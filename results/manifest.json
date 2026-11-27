@@ -1,0 +1,101 @@
+{
+  "generated_at_utc": "2026-11-27T18:43:27+00:00",
+  "main_runs": 30,
+  "control_runs": 10,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "demands": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "policies": [
+    "P0",
+    "P1"
+  ],
+  "days_per_run": 60,
+  "runs": [
+    "low_P0_seed0",
+    "low_P1_seed0",
+    "medium_P0_seed0",
+    "medium_P1_seed0",
+    "high_P0_seed0",
+    "high_P1_seed0",
+    "low_P0_seed1",
+    "low_P1_seed1",
+    "medium_P0_seed1",
+    "medium_P1_seed1",
+    "high_P0_seed1",
+    "high_P1_seed1",
+    "low_P0_seed2",
+    "low_P1_seed2",
+    "medium_P0_seed2",
+    "medium_P1_seed2",
+    "high_P0_seed2",
+    "high_P1_seed2",
+    "low_P0_seed3",
+    "low_P1_seed3",
+    "medium_P0_seed3",
+    "medium_P1_seed3",
+    "high_P0_seed3",
+    "high_P1_seed3",
+    "low_P0_seed4",
+    "low_P1_seed4",
+    "medium_P0_seed4",
+    "medium_P1_seed4",
+    "high_P0_seed4",
+    "high_P1_seed4",
+    "control_allhold_medium_P0_seed0",
+    "control_allhold_medium_P1_seed0",
+    "control_allhold_medium_P0_seed1",
+    "control_allhold_medium_P1_seed1",
+    "control_allhold_medium_P0_seed2",
+    "control_allhold_medium_P1_seed2",
+    "control_allhold_medium_P0_seed3",
+    "control_allhold_medium_P1_seed3",
+    "control_allhold_medium_P0_seed4",
+    "control_allhold_medium_P1_seed4"
+  ],
+  "seed_inputs": {
+    "0": {
+      "sessions_public.csv": "5f6e8dff7f867f0307bca8bac8f1162f6414052122c480aa41d3b3652094dfed",
+      "drivers_private.csv": "6a4d1606050d9d23f1e24a606ff04834970792e3bc259fd001fbc14dd7d0b707",
+      "chargers.csv": "2626d87ab539d367542e43c65a303470297e0170a47292ce509029b2b4ece17b",
+      "policies.csv": "bfb8e91b500e4ec17a8e2706d5f9c89dd384aba087a5a29a4717dbda76144c54",
+      "config.json": "0ebd4c9b5d374ccf5ecb0be0dc4d543f673cb408c8cff9e868c2421c3d98506e"
+    },
+    "1": {
+      "sessions_public.csv": "5953aa0ec872b10be52d21e8ec9c4e791494b38a3fa2e08610a893e4ac2db935",
+      "drivers_private.csv": "4dd7e9968fb2a9cb23cd7e137837861407924cae4ebd68304c5f5dc6154c5421",
+      "chargers.csv": "2626d87ab539d367542e43c65a303470297e0170a47292ce509029b2b4ece17b",
+      "policies.csv": "bfb8e91b500e4ec17a8e2706d5f9c89dd384aba087a5a29a4717dbda76144c54",
+      "config.json": "c938adfa28d84cfaf59cb66047680dacc115e378ceec63f97492e0a85ee49aae"
+    },
+    "2": {
+      "sessions_public.csv": "8c08ca9624bdd63df80856b57b03c776d35e4c05e8082203d00d910e41695073",
+      "drivers_private.csv": "0c983ef6d2e249dfc852ab2fab263f64d6a44a51d3ce52ad43d958a37977052d",
+      "chargers.csv": "2626d87ab539d367542e43c65a303470297e0170a47292ce509029b2b4ece17b",
+      "policies.csv": "bfb8e91b500e4ec17a8e2706d5f9c89dd384aba087a5a29a4717dbda76144c54",
+      "config.json": "bbf11f8d6bf15d532ace3d65e599d8d1f963ebf06b11e470786ead2e7bcfa701"
+    },
+    "3": {
+      "sessions_public.csv": "0abf62814930e0ef4d70ec3cc56d590f510227348f4627301780775580b0f142",
+      "drivers_private.csv": "3a78660647a2e6ada6d5a35a611a82993f56288281e08a3d1147183989581f09",
+      "chargers.csv": "2626d87ab539d367542e43c65a303470297e0170a47292ce509029b2b4ece17b",
+      "policies.csv": "bfb8e91b500e4ec17a8e2706d5f9c89dd384aba087a5a29a4717dbda76144c54",
+      "config.json": "2f48680dac9bdd7939d981778a0681bd6ed4553a12d333c3863ca94ee0b5b4ed"
+    },
+    "4": {
+      "sessions_public.csv": "88e71b12fc1ade5db4632b883101f893c00d441852a3fe57c1afaf8231991646",
+      "drivers_private.csv": "49f0cc4826c68c4ee7997cef0a8f31fe6bda2f8b3210c97f1e517b6fc611ebbf",
+      "chargers.csv": "2626d87ab539d367542e43c65a303470297e0170a47292ce509029b2b4ece17b",
+      "policies.csv": "bfb8e91b500e4ec17a8e2706d5f9c89dd384aba087a5a29a4717dbda76144c54",
+      "config.json": "0c968283ab1e6117d0764d20b6291dc9801587ac4d38c4ddd7ead140c6873b7a"
+    }
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "utility_example_flexible_P1": 11,
+  "normal_form": {
+    "payoffs": {
+      "CC": [
+        4.0,
+        4.0
+      ],
+      "CH": [
+        0.0,
+        6.0
+      ],
+      "HC": [
+        6.0,
+        0.0
+      ],
+      "HH": [
+        1.0,
+        1.0
+      ]
+    },
+    "best_responses": {
+      "P1_vs_P2": {
+        "C": [
+          "H"
+        ],
+        "H": [
+          "H"
+        ]
+      },
+      "P2_vs_P1": {
+        "C": [
+          "H"
+        ],
+        "H": [
+          "H"
+        ]
+      }
+    },
+    "pure_nash": [
+      [
+        "H",
+        "H"
+      ]
+    ],
+    "dominant_P1": "H",
+    "dominant_P2": "H",
+    "best_joint_outcome": [
+      "C",
+      "C"
+    ],
+    "symmetric": true
+  },
+  "sequential_perfect_information": {
+    "p2_strategy": {
+      "C": "H",
+      "H": "H"
+    },
+    "p1_strategy": "H",
+    "path": [
+      "H",
+      "H"
+    ],
+    "payoffs": [
+      1.0,
+      1.0
+    ]
+  },
+  "simultaneous_imperfect_information": {
+    "pure_nash": [
+      [
+        "H",
+        "H"
+      ]
+    ]
+  },
+  "memory_tree": {
+    "leaves": {
+      "LLL": [
+        1.0,
+        3.0
+      ],
+      "LLR": [
+        8.0,
+        4.0
+      ],
+      "LRL": [
+        6.0,
+        1.0
+      ],
+      "LRR": [
+        0.0,
+        2.0
+      ],
+      "RLL": [
+        6.0,
+        5.0
+      ],
+      "RLR": [
+        2.0,
+        2.0
+      ],
+      "RRL": [
+        3.0,
+        4.0
+      ],
+      "RRR": [
+        1.0,
+        1.0
+      ]
+    },
+    "full_information": {
+      "p1_final": {
+        "LL": {
+          "choice": "R",
+          "payoffs": [
+            8.0,
+            4.0
+          ]
+        },
+        "LR": {
+          "choice": "L",
+          "payoffs": [
+            6.0,
+            1.0
+          ]
+        },
+        "RL": {
+          "choice": "L",
+          "payoffs": [
+            6.0,
+            5.0
+          ]
+        },
+        "RR": {
+          "choice": "L",
+          "payoffs": [
+            3.0,
+            4.0
+          ]
+        }
+      },
+      "p2": {
+        "L": {
+          "choice": "L",
+          "payoffs": [
+            8.0,
+            4.0
+          ]
+        },
+        "R": {
+          "choice": "L",
+          "payoffs": [
+            6.0,
+            5.0
+          ]
+        }
+      },
+      "p1_root": "L",
+      "path": "LLR",
+      "payoffs": [
+        8.0,
+        4.0
+      ]
+    },
+    "information_sets": {
+      "full_information": {
+        "P1": [
+          [
+            "root"
+          ],
+          [
+            "LL"
+          ],
+          [
+            "LR"
+          ],
+          [
+            "RL"
+          ],
+          [
+            "RR"
+          ]
+        ],
+        "P2": [
+          [
+            "L"
+          ],
+          [
+            "R"
+          ]
+        ],
+        "perfect_recall": true
+      },
+      "forget_own_first_action": {
+        "P1": [
+          [
+            "root"
+          ],
+          [
+            "LL",
+            "RL"
+          ],
+          [
+            "LR",
+            "RR"
+          ]
+        ],
+        "P2": [
+          [
+            "L"
+          ],
+          [
+            "R"
+          ]
+        ],
+        "perfect_recall": false
+      },
+      "forget_stage": {
+        "P1": [
+          [
+            "root",
+            "LL",
+            "LR",
+            "RL",
+            "RR"
+          ]
+        ],
+        "P2": [
+          [
+            "L"
+          ],
+          [
+            "R"
+          ]
+        ],
+        "perfect_recall": false
+      }
+    }
+  },
+  "mixed_vs_behavioral": {
+    "p1_payoffs_given_p2_L": {
+      "LL": 1.0,
+      "LR": 8.0,
+      "RL": 6.0,
+      "RR": 2.0
+    },
+    "mixed_probabilities": {
+      "LL": 0.5,
+      "LR": 0.0,
+      "RL": 0.0,
+      "RR": 0.5
+    },
+    "behavioral_probabilities": {
+      "LL": 0.25,
+      "LR": 0.25,
+      "RL": 0.25,
+      "RR": 0.25
+    },
+    "recall_behavioral_probabilities": {
+      "LL": 0.5,
+      "LR": 0.0,
+      "RL": 0.0,
+      "RR": 0.5
+    },
+    "mixed_expected": 1.5,
+    "behavioral_expected": 4.25,
+    "recall_behavioral_expected": 1.5,
+    "probability_totals": {
+      "mixed": 1.0,
+      "behavioral": 1.0,
+      "recall_behavioral": 1.0
+    },
+    "forgotten_stage_behavioral_curve": {
+      "a": -11.0,
+      "b": 10.0,
+      "c": 2.0
+    },
+    "forgotten_stage_best_p": 0.45454545454545453,
+    "forgotten_stage_best_value": 4.2727272727272725
+  },
+  "finite_repeated": {
+    "rounds": [
+      {
+        "round": 1,
+        "actions": [
+          "H",
+          "H"
+        ],
+        "payoffs": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "round": 2,
+        "actions": [
+          "H",
+          "H"
+        ],
+        "payoffs": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "round": 3,
+        "actions": [
+          "H",
+          "H"
+        ],
+        "payoffs": [
+          1.0,
+          1.0
+        ]
+      }
+    ],
+    "total_payoffs": [
+      3.0,
+      3.0
+    ],
+    "cooperative_total": [
+      12.0,
+      12.0
+    ]
+  },
+  "infinite_repeated": {
+    "threshold": 0.4,
+    "table": [
+      {
+        "delta": 0.2,
+        "cooperate_forever": 5.0,
+        "deviate_now": 6.25,
+        "cooperate_twice_then_deviate": 5.05,
+        "cooperation_sustained": false
+      },
+      {
+        "delta": 0.4,
+        "cooperate_forever": 6.666666666666667,
+        "deviate_now": 6.666666666666667,
+        "cooperate_twice_then_deviate": 6.666666666666666,
+        "cooperation_sustained": true
+      },
+      {
+        "delta": 0.5,
+        "cooperate_forever": 8.0,
+        "deviate_now": 7.0,
+        "cooperate_twice_then_deviate": 7.75,
+        "cooperation_sustained": true
+      },
+      {
+        "delta": 0.8,
+        "cooperate_forever": 20.000000000000004,
+        "deviate_now": 10.0,
+        "cooperate_twice_then_deviate": 13.600000000000001,
+        "cooperation_sustained": true
+      }
+    ],
+    "punishment_stage_payoffs": {
+      "H_vs_H": 1.0,
+      "C_vs_H": 0.0
+    },
+    "H_best_response_in_punishment": true
+  },
+  "bayesian": {
+    "fee": 1.5,
+    "plan": {
+      "urgent": "C",
+      "flexible": "H"
+    },
+    "checks": [
+      {
+        "type": "urgent",
+        "planned": "C",
+        "EV_C": 1.2,
+        "EV_H": 0.9999999999999999,
+        "terms_C": [
+          [
+            0.3,
+            4.0
+          ],
+          [
+            0.7,
+            0.0
+          ]
+        ],
+        "terms_H": [
+          [
+            0.3,
+            4.5
+          ],
+          [
+            0.7,
+            -0.5
+          ]
+        ],
+        "best": "C",
+        "no_profitable_deviation": true
+      },
+      {
+        "type": "flexible",
+        "planned": "H",
+        "EV_C": 1.2,
+        "EV_H": 2.0,
+        "terms_C": [
+          [
+            0.3,
+            4.0
+          ],
+          [
+            0.7,
+            0.0
+          ]
+        ],
+        "terms_H": [
+          [
+            0.3,
+            5.5
+          ],
+          [
+            0.7,
+            0.5
+          ]
+        ],
+        "best": "H",
+        "no_profitable_deviation": true
+      }
+    ],
+    "players_checked": [
+      "P1",
+      "P2"
+    ],
+    "is_bayesian_nash_equilibrium": true
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "overall": {
+    "requests": 720,
+    "avg_wait_slots": 0.4,
+    "completion_rate": 0.9472222222222222,
+    "energy_kwh": 8496.0,
+    "idle_slots": 285,
+    "unserved": 4,
+    "incomplete": 34,
+    "holds": 158,
+    "total_gross_utility": 18438.0,
+    "total_penalty": 570.0,
+    "total_net_utility": 17868.0,
+    "mean_gross_utility": 25.608333333333334,
+    "mean_net_utility": 24.816666666666666,
+    "avg_wait_minutes": 12.0,
+    "days": 60
+  },
+  "by_type": {
+    "urgent": {
+      "requests": 110,
+      "avg_wait_slots": 0.42727272727272725,
+      "completion_rate": 0.9636363636363636,
+      "energy_kwh": 1338.0,
+      "idle_slots": 80,
+      "unserved": 0,
+      "incomplete": 4,
+      "holds": 44,
+      "total_gross_utility": 3953.0,
+      "total_penalty": 160.0,
+      "total_net_utility": 3793.0,
+      "mean_gross_utility": 35.93636363636364,
+      "mean_net_utility": 34.481818181818184
+    },
+    "flexible": {
+      "requests": 610,
+      "avg_wait_slots": 0.3950819672131147,
+      "completion_rate": 0.9442622950819672,
+      "energy_kwh": 7158.0,
+      "idle_slots": 205,
+      "unserved": 4,
+      "incomplete": 30,
+      "holds": 114,
+      "total_gross_utility": 14485.0,
+      "total_penalty": 410.0,
+      "total_net_utility": 14075.0,
+      "mean_gross_utility": 23.74590163934426,
+      "mean_net_utility": 23.07377049180328
+    }
+  },
+  "by_strategy": {
+    "release": {
+      "requests": 167,
+      "avg_wait_slots": 0.3712574850299401,
+      "completion_rate": 0.9341317365269461,
+      "energy_kwh": 1929.0,
+      "idle_slots": 0,
+      "unserved": 3,
+      "incomplete": 8,
+      "holds": 0,
+      "total_gross_utility": 3796.0,
+      "total_penalty": 0.0,
+      "total_net_utility": 3796.0,
+      "mean_gross_utility": 22.730538922155688,
+      "mean_net_utility": 22.730538922155688
+    },
+    "hold": {
+      "requests": 182,
+      "avg_wait_slots": 0.36813186813186816,
+      "completion_rate": 0.945054945054945,
+      "energy_kwh": 2124.0,
+      "idle_slots": 274,
+      "unserved": 1,
+      "incomplete": 9,
+      "holds": 147,
+      "total_gross_utility": 5233.0,
+      "total_penalty": 548.0,
+      "total_net_utility": 4685.0,
+      "mean_gross_utility": 28.752747252747252,
+      "mean_net_utility": 25.74175824175824
+    },
+    "reciprocal": {
+      "requests": 177,
+      "avg_wait_slots": 0.4124293785310734,
+      "completion_rate": 0.96045197740113,
+      "energy_kwh": 2142.0,
+      "idle_slots": 11,
+      "unserved": 0,
+      "incomplete": 7,
+      "holds": 11,
+      "total_gross_utility": 4433.0,
+      "total_penalty": 22.0,
+      "total_net_utility": 4411.0,
+      "mean_gross_utility": 25.045197740112993,
+      "mean_net_utility": 24.92090395480226
+    },
+    "fee_aware": {
+      "requests": 194,
+      "avg_wait_slots": 0.44329896907216493,
+      "completion_rate": 0.9484536082474226,
+      "energy_kwh": 2301.0,
+      "idle_slots": 0,
+      "unserved": 0,
+      "incomplete": 10,
+      "holds": 0,
+      "total_gross_utility": 4976.0,
+      "total_penalty": 0.0,
+      "total_net_utility": 4976.0,
+      "mean_gross_utility": 25.649484536082475,
+      "mean_net_utility": 25.649484536082475
+    }
+  },
+  "actions": {
+    "release": 424,
+    "hold_1": 31,
+    "hold_2": 127,
+    "forced_release": 100,
+    "departed_incomplete": 34,
+    "unserved": 4
+  }
+}

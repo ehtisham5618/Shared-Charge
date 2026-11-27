@@ -1,0 +1,38 @@
+{
+  "run_id": "high_P0_seed3",
+  "seed": 3,
+  "demand": "high",
+  "policy_id": "P0",
+  "policy_name": "First come first served",
+  "fee_per_idle_slot": 0.0,
+  "use_history": false,
+  "control_all_hold": false,
+  "strategy_override": null,
+  "days": 60,
+  "requests": 2160,
+  "chargers": 6,
+  "charger_power_kw": 6.0,
+  "kwh_per_slot": 3.0,
+  "day_end_boundary": 16,
+  "slot_minutes": 30,
+  "urgent_prior": 0.3,
+  "generator_seed": 3,
+  "input_dir": "data/generated/data_seed_3",
+  "input_files": {
+    "sessions_public.csv": "0abf62814930e0ef4d70ec3cc56d590f510227348f4627301780775580b0f142",
+    "drivers_private.csv": "3a78660647a2e6ada6d5a35a611a82993f56288281e08a3d1147183989581f09",
+    "chargers.csv": "2626d87ab539d367542e43c65a303470297e0170a47292ce509029b2b4ece17b",
+    "policies.csv": "bfb8e91b500e4ec17a8e2706d5f9c89dd384aba087a5a29a4717dbda76144c54",
+    "config.json": "2f48680dac9bdd7939d981778a0681bd6ed4553a12d333c3863ca94ee0b5b4ed"
+  },
+  "utility": "v*delivered_kwh - w*waiting_slots + h*idle_slots - F*idle_slots",
+  "event_order": [
+    "finish energy",
+    "departures",
+    "hold decisions",
+    "expire holds",
+    "arrivals",
+    "allocate by (arrival, driver_id)",
+    "charge next slot"
+  ]
+}
