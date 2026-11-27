@@ -1,0 +1,4 @@
+# Keep data files byte-for-byte so SHA-256 checks pass on every platform
+starter_data/** -text
+data/generated/** -text
+results/** -text

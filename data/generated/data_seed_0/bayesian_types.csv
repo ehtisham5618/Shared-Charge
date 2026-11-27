@@ -1,0 +1,3 @@
+private_type,probability,extra_hold_payoff
+urgent,0.3,0
+flexible,0.7,1

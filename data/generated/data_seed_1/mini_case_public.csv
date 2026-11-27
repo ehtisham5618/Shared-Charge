@@ -1,0 +1,4 @@
+request_id,driver_id,arrival_slot,departure_slot,requested_kwh
+mini-A,A,0,4,6
+mini-B,B,0,5,3
+mini-C,C,1,6,6

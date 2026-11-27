@@ -1,0 +1,42 @@
+file,field,meaning,unit,visibility
+sessions_public.csv,scenario,Demand level; run separately,category,Reveal this row only at arrival
+sessions_public.csv,request_id,Unique ID within file,ID,Reveal this row only at arrival
+sessions_public.csv,day,Day within the scenario,1..60,Reveal this row only at arrival
+sessions_public.csv,driver_id,Fake recurring driver,ID,Reveal this row only at arrival
+sessions_public.csv,arrival_slot,First visible boundary,0..8,Reveal this row only at arrival
+sessions_public.csv,departure_slot,Must leave at this boundary,1..16,Reveal this row only at arrival
+sessions_public.csv,requested_kwh,Requested energy for this visit,kWh,Reveal this row only at arrival
+drivers_private.csv,driver_id,Fake recurring driver,ID,Own driver and evaluator only
+drivers_private.csv,private_type,Urgent or Flexible,category,Own driver and evaluator only
+drivers_private.csv,value_per_kwh,v in utility,points/kWh,Own driver and evaluator only
+drivers_private.csv,wait_cost_per_slot,w in utility,points/slot,Own driver and evaluator only
+drivers_private.csv,idle_benefit_per_slot,h in utility,points/slot,Own driver and evaluator only
+drivers_private.csv,private_strategy,One of four driver rules,category,Own driver and evaluator only
+chargers.csv,charger_id,Unique charger,ID,Public
+chargers.csv,power_kw,Constant delivery rate,kW,Public
+policies.csv,policy_id,P0 to P3,ID,Public
+policies.csv,name,Readable policy name,text,Public
+policies.csv,fee_per_idle_slot,F in utility,points/slot,Public
+policies.csv,use_history,Whether score affects queue order,0 or 1,Public
+benchmark_game.csv,p1_action,C or H chosen in the small game,action,Public payoff model
+benchmark_game.csv,p2_action,C or H chosen in the small game,action,Public payoff model
+benchmark_game.csv,p1_payoff,No-penalty teaching payoff,points,Public payoff model
+benchmark_game.csv,p2_payoff,No-penalty teaching payoff,points,Public payoff model
+bayesian_types.csv,private_type,Possible type label,category,The distribution and mapping are public; realized opponent type is private
+bayesian_types.csv,probability,Independent prior probability,0..1,The distribution and mapping are public; realized opponent type is private
+bayesian_types.csv,extra_hold_payoff,alpha; added only when this type plays H,points,The distribution and mapping are public; realized opponent type is private
+memory_tree.csv,p1_first,L/R action along one path,action,Node visibility depends on the memory variant
+memory_tree.csv,p2_action,L/R action along one path,action,Node visibility depends on the memory variant
+memory_tree.csv,p1_second,L/R action along one path,action,Node visibility depends on the memory variant
+memory_tree.csv,p1_payoff,Terminal teaching payoff,points,Public payoff model
+memory_tree.csv,p2_payoff,Terminal teaching payoff,points,Public payoff model
+mini_case_public.csv,request_id,Unique ID within file,ID,Reveal this row only at arrival
+mini_case_public.csv,driver_id,Fake recurring driver,ID,Reveal this row only at arrival
+mini_case_public.csv,arrival_slot,First visible boundary,0..8,Reveal this row only at arrival
+mini_case_public.csv,departure_slot,Must leave at this boundary,1..16,Reveal this row only at arrival
+mini_case_public.csv,requested_kwh,Requested energy for this visit,kWh,Reveal this row only at arrival
+mini_case_private.csv,driver_id,Fake recurring driver,ID,Own driver and evaluator only
+mini_case_private.csv,private_type,Urgent or Flexible,category,Own driver and evaluator only
+mini_case_private.csv,value_per_kwh,v in utility,points/kWh,Own driver and evaluator only
+mini_case_private.csv,wait_cost_per_slot,w in utility,points/slot,Own driver and evaluator only
+mini_case_private.csv,idle_benefit_per_slot,h in utility,points/slot,Own driver and evaluator only

@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Node
+frontend/node_modules/
+
+# Local browser-check screenshots (regenerate with scripts/ui_check.py)
+results/ui_check/
+
+# Office lock files and OS clutter
+~$*
+.DS_Store
+Thumbs.db
+
+# TypeScript build cache
+*.tsbuildinfo

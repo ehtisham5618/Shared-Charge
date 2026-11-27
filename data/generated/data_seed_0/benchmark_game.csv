@@ -1,0 +1,5 @@
+p1_action,p2_action,p1_payoff,p2_payoff
+C,C,4,4
+C,H,0,6
+H,C,6,0
+H,H,1,1

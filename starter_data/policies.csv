@@ -1,0 +1,5 @@
+policy_id,name,fee_per_idle_slot,use_history
+P0,First come first served,0,0
+P1,Idle penalty only,2,0
+P2,History only,0,1
+P3,History and penalty,2,1

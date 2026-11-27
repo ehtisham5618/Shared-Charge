@@ -1,0 +1,46 @@
+{
+  "data_kind": "synthetic teaching data; not measured or fitted to ACN-Data",
+  "seed": 1,
+  "urgent_prior": 0.3,
+  "days": 60,
+  "driver_pool": 40,
+  "slot_minutes": 30,
+  "day_slots": 16,
+  "day_start": "08:00",
+  "day_end": "16:00",
+  "charger_count": 6,
+  "charger_power_kw": 6,
+  "loads_per_day": {
+    "low": 12,
+    "medium": 24,
+    "high": 36
+  },
+  "default_delta": 0.8,
+  "history_initial": 0,
+  "history_min": -3,
+  "history_max": 3,
+  "history_release_change": 1,
+  "history_hold_change": -1,
+  "long_wait_priority_slots": 4,
+  "max_idle_slots": 2,
+  "benchmark_fee_grid": [
+    0,
+    1.5,
+    3
+  ],
+  "queue_fee_grid": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "bayesian_prior_grid": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "replicator_step": 0.05,
+  "replicator_generations": 100,
+  "public_input_policy": "Only expose an arrival at its arrival boundary; never give agents future rows.",
+  "private_input_policy": "Give a driver its own type and rule only. Full private table belongs to the evaluator."
+}
